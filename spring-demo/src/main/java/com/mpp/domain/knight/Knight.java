@@ -1,6 +1,6 @@
-package com.mpp.domain;
+package com.mpp.domain.knight;
 
-public class HelloWorld {
+public abstract class Knight {
 
     private String name;
 

@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean class="com.mpp.domain.knight.BraveKnight" id="braveKnight">
+        <!--<constructor-arg ref="makeRoundTableRounderQuest"/>-->
+        <property name="quest" ref="rescueDamselQuest"/>
+        <property name="name" value="Kyle Knopp"/>
+    </bean>
+
+    <bean id="makeRoundTableRounderQuest" class="com.mpp.domain.quest.MakeRoundTableRounderQuest"/>
+    <bean id="rescueDamselQuest" class="com.mpp.domain.quest.RescueDamselQuest"/>
+
+</beans>
